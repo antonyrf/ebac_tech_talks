@@ -1,0 +1,25 @@
+@use 'variables';
+
+.button{
+    padding: 12px;
+    background-color: variables.$buttonBGColor;
+    font-size: 18px;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+    white-space: nowrap;
+
+    @media (max-width:1024px){
+        display: flex;
+        align-items: center;
+    }
+    
+    @media (max-width:640px){
+        display: block;
+        width: 100%;
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+}
